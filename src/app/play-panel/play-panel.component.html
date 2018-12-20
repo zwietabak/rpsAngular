@@ -1,0 +1,25 @@
+<table border="0">
+  <tr>
+    <td>
+      Playername:
+    </td>
+    <td>
+      <input [(ngModel)]="playerName" placeholder="Type a name">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Bet in Ether:
+    </td>
+    <td>
+      <input [(ngModel)]="playerStake" placeholder="1">
+    </td>
+  </tr>
+</table>
+<button (click)="setPlayerChoise('rock')">Rock</button>
+<button (click)="setPlayerChoise('paper')">Paper</button>
+<button (click)="setPlayerChoise('scisor')">Scisor</button>
+<br /><br />
+<button (click)="makeBet()">Place BET!</button>
+<app-status-panel [playerName]="playerName" [playerStake]="playerStake" [playerChoice]="playerChoice"></app-status-panel>
+<app-admin-panel></app-admin-panel>

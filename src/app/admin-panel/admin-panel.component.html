@@ -1,0 +1,29 @@
+<h3>Admin Panel</h3>
+<div id="adminPanel">
+  <table border="0">
+    <tr>
+      <td>
+        <button (click)="getStatus()">get status</button>
+      </td>
+      <td>
+        Game status: {{ gameStatus }}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button (click)="getWinner()">get winner</button>
+      </td>
+      <td>
+        Winner: {{ nameWinner }}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button (click)="getNumberPlayers()">get number players</button>
+      </td>
+      <td>
+        Number players: {{ numberPlayers }}
+      </td>
+    </tr>
+  </table>
+</div>
